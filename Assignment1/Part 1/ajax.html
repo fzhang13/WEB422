@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+    
+  }
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    padding: 5px;
+  }
+</style>
+
+<body>
+  <h2>HTML-XML-AJAX-PRAC</h2>
+
+  <button type="button" onclick="loadDoc()">Display School</button>
+  <br><br>
+  <div class="main">
+    <table id="demo"></table>
+    <div class="images">
+    <table class="images">
+      <tr>
+        <td><img src="img/img1.jpg" alt=""></td>
+        <td><img src="img/img2.jpeg" alt=""></td>
+      </tr>
+      <tr>
+        <td><img src="img/img3.jpg" alt=""></td>
+        <td><img src="img/img4.jpg" alt=""></td>
+      </tr>
+    </table>
+  </div>
+
+  </div>
+  <script>
+    
+
+    function loadDoc() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          myFunction(this);
+        }
+      };
+      xhttp.open("GET", "education.xml", true);
+      xhttp.send();
+    }
+
+
+    function myFunction(xml) {
+      
+      var i;
+      var xmlDoc = xml.responseXML;
+      var table = "<tr><th>School</th><th>Address</th><th>Phone</th><th>Type</th></tr>";
+      var x = xmlDoc.getElementsByTagName("SCHOOL");
+      for (i = 0; i < x.length; i++) {
+        table += "<tr><td>" +
+          x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+          "</td><td>" +
+          x[i].getElementsByTagName("LOCATION")[0].childNodes[0].nodeValue +
+          "</td><td>" +
+          x[i].getElementsByTagName("PHONE")[0].childNodes[0].nodeValue +
+          "</td><td>" +
+          x[i].getElementsByTagName("TYPE")[0].childNodes[0].nodeValue +
+          "</td></tr>";
+      }
+      document.getElementById("demo").innerHTML = table;
+    }
+
+  </script>
+
+</body>
+
+</html>

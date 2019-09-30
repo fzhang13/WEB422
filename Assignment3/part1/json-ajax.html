@@ -1,0 +1,148 @@
+<!-- 
+/********************************************************************************* *
+WEB422 – Assignment 3
+* I declare that this assignment is my own work in accordance with Seneca Academic Policy. * No part
+of this assignment has been copied manually or electronically from any other source * (including web
+sites) or distributed to other students.
+*
+* Name: _Felix Xin Song Zhang_ Student ID: _111976171_ Date: _June 10th, 2019_
+*
+*
+********************************************************************************/ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+
+  .table{
+    display: grid;
+    grid-template-columns: 1fr;
+    float: left;
+  }
+  .main{
+    display: grid;
+    float: right;
+    grid-template-columns: 1fr;
+    grid-column-gap: 5px;
+    
+  }
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    padding: 5px;
+  }
+</style>
+
+<body>
+  <h2>Knockout-MongoDB-jQuery</h2>
+
+  
+<div class="table">
+    <button id="get-button" type="button" onclick="loadDoc()">Display Education</button>
+  <br>
+  <br>
+  <table id="properties">
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Phone</th>
+              <th>Type</th>
+          </tr>
+      </thead>
+      <tbody data-bind="foreach: education">
+          <tr>
+              <td data-bind="text: name"></td>
+              <td data-bind="text: location"></td>
+              <td data-bind="text: phone"></td>
+              <td data-bind="text: type"></td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
+  <div class="main">
+    <table id="demo"></table>
+    <div class="images">
+    <table class="images">
+      <tr>
+        <td><img src="img/img1.jpg" alt=""></td>
+        <td><img src="img/img2.jpeg" alt=""></td>
+      </tr>
+      <tr>
+        <td><img src="img/img3.jpg" alt=""></td>
+        <td><img src="img/img4.jpg" alt=""></td>
+      </tr>
+    </table>
+  </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+
+  <!-- Include Knockout -->
+  <script src="lib/knockout-3.4.2.js"></script>
+
+  <!-- Include Knockout mapping -->
+  <script src="lib/knockout.mapping-latest.js"></script>
+
+  <script src="js/main.js"></script>
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+
+</html>

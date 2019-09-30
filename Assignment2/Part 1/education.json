@@ -1,0 +1,54 @@
+[
+    {
+      "name": "Seneca College",
+      "location": "1750 Finch Ave E, North York, ON M2J 2X5",
+      "phone": "416-491-5050",
+      "type": "College"
+    },{
+        "name": "Centennial College",
+        "location": "941 Progress Ave, Scarborough, ON M1G 3T8",
+        "phone": "416-289-5300",
+        "type": "College"
+    },{
+        "name": "Durham College",
+        "location": "2000 Simcoe Street North, Oshawa, ON, L1G 0C5",
+        "phone": "905-721-2000",
+        "type": "College"
+    },{
+        "name": "George Brown College",
+        "location": "160 Kendal Ave, Toronto, ON M5R 1M3",
+        "phone": "416-415-2000",
+        "type": "College"
+    },{
+        "name": "Sheridan College",
+        "location": "4180 Duke of York Blvd, Mississauga, ON L5B 0G5",
+        "phone": "905-845-9430",
+        "type": "College"
+    },{
+        "name": "York University",
+        "location": "4700 Keele St, Toronto, ON M3J 1P3",
+        "phone": "416-736-2100",
+        "type": "University"
+    },{
+        "name": "Ryerson University",
+        "location": "350 Victoria St, Toronto, ON M5B 2K3",
+        "phone": "416-979-5036",
+        "type": "University"
+    },{
+        "name": "University of Waterloo",
+        "location": "200 University Ave W, Waterloo, ON N2L 3G1",
+        "phone": "519-888-4567",
+        "type": "University"
+    },{
+        "name": "University of Toronto",
+        "location": "172 St George St, Toronto, ON M5R 0A3",
+        "phone": "416-978-2011",
+        "type": "University"
+    },{
+        "name": "University of Guelph",
+        "location": "50 Stone Rd E, Guelph, ON N1G 2W1",
+        "phone": "519-824-4120",
+        "type": "University"
+    }
+
+  ]

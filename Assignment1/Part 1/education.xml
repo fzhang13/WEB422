@@ -1,0 +1,64 @@
+<!-->An XML file containing CD info -->
+
+<EDUCATION>
+<SCHOOL>
+<TITLE>Seneca College</TITLE>
+<LOCATION>1750 Finch Ave E, North York, ON M2J 2X5</LOCATION>
+<PHONE>416-491-5050</PHONE>
+<TYPE>College</TYPE>
+</SCHOOL>
+<SCHOOL>
+<TITLE>Centennial College</TITLE>
+<LOCATION>941 Progress Ave, Scarborough, ON M1G 3T8</LOCATION>
+<PHONE>416-289-5300</PHONE>
+<TYPE>College</TYPE>
+</SCHOOL>
+<SCHOOL>
+<TITLE>Durham College</TITLE>
+<LOCATION>2000 Simcoe Street North, Oshawa, ON, L1G 0C5</LOCATION>
+<PHONE>	905-721-2000</PHONE>
+<TYPE>College</TYPE>
+</SCHOOL>
+<SCHOOL>
+<TITLE>George Brown College</TITLE>
+<LOCATION>160 Kendal Ave, Toronto, ON M5R 1M3</LOCATION>
+<PHONE>416-415-2000</PHONE>
+<TYPE>College</TYPE>
+</SCHOOL>
+<SCHOOL>
+<TITLE>Sheridan College</TITLE>
+<LOCATION>4180 Duke of York Blvd, Mississauga, ON L5B 0G5</LOCATION>
+<PHONE> 905-845-9430</PHONE>
+<TYPE>College</TYPE>
+</SCHOOL>
+<SCHOOL>
+<TITLE>York University</TITLE>
+<LOCATION> 4700 Keele St, Toronto, ON M3J 1P3</LOCATION>
+<PHONE>416-736-2100</PHONE>
+<TYPE>University</TYPE>
+</SCHOOL>
+<SCHOOL>
+<TITLE>Ryerson University</TITLE>
+<LOCATION>350 Victoria St, Toronto, ON M5B 2K3</LOCATION>
+<PHONE>416-979-5036</PHONE>
+<TYPE>University</TYPE>
+</SCHOOL>
+<SCHOOL>
+<TITLE>University of Waterloo</TITLE>
+<LOCATION>200 University Ave W, Waterloo, ON N2L 3G1</LOCATION>
+<PHONE>519-888-4567</PHONE>
+<TYPE>University</TYPE>
+</SCHOOL>
+<SCHOOL>
+<TITLE>University of Toronto</TITLE>
+<LOCATION>172 St George St, Toronto, ON M5R 0A3</LOCATION>
+<PHONE>416-978-2011</PHONE>
+<TYPE>University</TYPE>
+</SCHOOL>
+<SCHOOL>
+<TITLE>University of Guelph</TITLE>
+<LOCATION>50 Stone Rd E, Guelph, ON N1G 2W1</LOCATION>
+<PHONE>519-824-4120</PHONE>
+<TYPE>University</TYPE>
+</SCHOOL>
+</EDUCATION>
